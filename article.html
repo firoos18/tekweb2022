@@ -67,7 +67,7 @@
                       <h5 class="card-title">{{ data.Title }}</h5>
                       <h7 class="card-text">by : {{ data.Author }}</h6>
                       <p class="card-text pt-3">{{ data.Content }}</p>
-                      <a href="#" class="btn btn-primary" @click="toTheMarkdown()">See More...</a>
+                      <a href="/markdown.html?markdownArticle=DummyArticle.md" class="btn btn-primary" @click="toTheMarkdown()">See More...</a>
                     </div>
                     </div>
                 </div>
@@ -92,8 +92,7 @@
     let app = Vue.createApp({
     data : function() {
       return {
-        article : {},
-        markdownArticle : null
+        article : {}
       }
     },
     methods : {
@@ -109,28 +108,10 @@
           .catch((error) => {
             console.log(error);
           })
-      },
-      toTheMarkdown(){     
-        var converter = new showdown.Converter();
-
-        axios
-          .get(
-            "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/markdown/DummyArticle.md"
-          )
-          .then((res) => {
-            var html = converter.makeHtml(res.data);
-            this.markdownArticle = html;
-          })
-          .catch((error) => {
-            console.log(error);
-          })
-        
-        console.log(this.markdownArticle)
       }
     },
     beforeMount(){
       this.getArticleData()
-      this.toTheMarkdown()
     }
   })
   app.mount('#app');

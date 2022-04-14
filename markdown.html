@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Website</title>
+ 
+  <!-- Custom Bootstrap -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- VueJS -->
+  <script src="https://unpkg.com/vue@3"></script>
+
+  <!-- Showdown -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
+  
+  <!-- Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body class="bg-light">
+  <!-- Start of Navbar -->
+  <section>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand mb-0 h1 d-md-none d-block"><i class='bx bx-dna bx-tada bx-rotate-90 bx-sm'></i> Portofolio Website</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item px-3">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item px-3">
+                <a class="nav-link" href="portofolio.html">PORTOFOLIO</a>
+            </li>
+            <li class="nav-item px-3 position-relative">
+                <a class="nav-link active text-primary" href="article.html">ARTICLE</a>
+                <p class="position-absolute start-50 top-50 translate-middle-x lead fw-bold text-secondary d-none d-md-block">&#8212</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- End of Navbar -->
+
+  <!-- Start of Main Content -->
+  <section>
+    <div class="container" id="app">
+        <div v-html="markdownArticle"></div>
+    </div>
+  </section>
+  <!-- End of Main Content -->
+
+  <!-- Start of Footer -->
+  <section>
+    
+  </section>
+  <!-- End of Footer -->
+
+  <!-- Bootstrap Requirements -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Source -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
