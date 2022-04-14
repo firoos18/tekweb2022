@@ -10,7 +10,7 @@
         "ID" : "2",
         "Title" : "Morbius Review",
         "Author" : "Rotten Tomatoes",
-        "Thumbnail" : "assets/img/article2_thumbnail.jpg",
+        "Thumbnail" : "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/article2_thumbnail.jpg",
         "Content" : "Cursed with uninspired effects, rote performances, and a borderline nonsensical story, this dreary mess is a vein attempt to make Morbius happen."
     }
 ]
