@@ -18,6 +18,9 @@
   <!-- Boxicons -->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
+  <!-- Showdown -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
+
 </head>
 <body class="bg-light" id="app">
   <!-- Start of Navbar -->
@@ -64,7 +67,7 @@
                       <h5 class="card-title">{{ data.Title }}</h5>
                       <h7 class="card-text">by : {{ data.Author }}</h6>
                       <p class="card-text pt-3">{{ data.Content }}</p>
-                      <a href="#" class="btn btn-primary">See More...</a>
+                      <a href="#" class="btn btn-primary" @click="toTheMarkdown()">See More...</a>
                     </div>
                     </div>
                 </div>
@@ -89,7 +92,8 @@
     let app = Vue.createApp({
     data : function() {
       return {
-        article : {}
+        article : {},
+        markdownArticle : null
       }
     },
     methods : {
@@ -105,13 +109,32 @@
           .catch((error) => {
             console.log(error);
           })
+      },
+      toTheMarkdown(){     
+        var converter = new showdown.Converter();
+
+        axios
+          .get(
+            "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/markdown/DummyArticle.md"
+          )
+          .then((res) => {
+            var html = converter.makeHtml(res.data);
+            this.markdownArticle = html;
+          })
+          .catch((error) => {
+            console.log(error);
+          })
+        
+        console.log(this.markdownArticle)
       }
     },
     beforeMount(){
       this.getArticleData()
+      this.toTheMarkdown()
     }
   })
   app.mount('#app');
+
   </script>
   <!-- End of Vue App -->
 
