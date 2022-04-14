@@ -57,12 +57,12 @@
         <p class="lead">This is the article page where I'm putting some articles to read.</p>
         <div class="container-fluid d-grid py-5">
             <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col">
+                <div class="col"  v-for="data in article">
                   <div class="card">
-                    <img src="" class="card-img-top" alt="...">
+                    <img src="{{ data.Thumbnail }}" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">{{ data.title }}</h5>
-                      <p class="card-text">{{ data. }}</p>
+                      <h5 class="card-title"></h5>
+                      <p class="card-text"></p>
                       <a href="#" class="btn btn-primary">See More...</a>
                     </div>
                     </div>
@@ -145,14 +145,22 @@
       getArticleData(){
         axios
           .get(
-            
+            "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/json/article.json"
           )
+          .then((res) => {
+            console.log(res.data);
+            this.article = res.data;
+          })
+          .catch((error) => {
+            console.log(error);
+          })
       }
+    },
+    beforeMount(){
+      this.getArticleData()
     }
   })
   app.mount('#app');
-
-  console.log(articlejson)
   </script>
   <!-- End of Vue App -->
 
