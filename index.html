@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portofolio Website</title>
+
+  <!-- VueJS -->
+  <script src="https://unpkg.com/vue@3"></script>
  
   <!-- Custom Bootstrap -->
   <link rel="stylesheet" href="assets/css/main.css">
@@ -13,7 +16,7 @@
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   
 </head>
-<body class="bg-light">
+<body class="bg-light" id="app">
   <!-- Start of Navbar -->
   <section>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -57,7 +60,7 @@
         </div>
         <div class="col-6 col-md-7">
           <h3 class="pt-5">&#8212 Hello</h3>
-          <h1 class="py-2">I'm Naufal Firoos Asy Syarif</h1>
+          <h1 class="py-2">I'm Naufal<span class="text-secondary">{{ name }}</span>Asy Syarif</h1>
           <p class="lead">An Information System students at Ahmad Dahlan University Yogyakarta. A passionate student who thirst in knowledge.</p>
         </div>
         <div class="col-6 col-md-4">
@@ -73,6 +76,19 @@
 
   </section>
   <!-- End of Footer -->
+
+  <!-- Start of VueJS Script -->
+  <script>
+    let app = Vue.createApp({
+      data(){
+        return{
+          name : ' Firoos '
+        }
+      }
+    })
+    app.mount('#app')
+  </script>
+  <!-- End of VueJS Script -->
 
 
   <!-- Bootstrap Requirements -->

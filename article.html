@@ -8,6 +8,9 @@
  
   <!-- VueJS -->
   <script src="https://unpkg.com/vue@3"></script>
+
+  <!-- Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   
   <!-- Custom Bootstrap -->
   <link rel="stylesheet" href="assets/css/main.css">
@@ -55,16 +58,16 @@
         <div class="container-fluid d-grid py-5">
             <div class="row row-cols-1 row-cols-md-4 g-4">
                 <div class="col">
-                  <div class="card" v-for="item in article1">
-                    <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+                  <div class="card">
+                    <img src="" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">{{ item.title }}</h5>
-                      <p class="card-text">{{ item.description }}</p>
+                      <h5 class="card-title">{{ data.title }}</h5>
+                      <p class="card-text">{{ data. }}</p>
                       <a href="#" class="btn btn-primary">See More...</a>
                     </div>
                     </div>
                 </div>
-            <div class="col">
+            <!-- <div class="col">
                 <div class="card" v-for="item in article2">
                     <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -113,10 +116,12 @@
                         <a href="#" class="btn btn-primary">See More...</a>
                     </div>
                   </div>
-            </div>
+            </div> -->
             </div>
         </div>
     </div>
+
+
   </section>
   <!-- End of Main Content -->
 
@@ -127,39 +132,27 @@
   <!-- End of Footer -->
 
   <!-- Start of Vue App -->
-  <script>
+  <script type="module">
+    
+
     let app = Vue.createApp({
     data : function() {
       return {
-        article1 : [{
-          title : 'Article #1',
-          description : 'This is the first article',
-          thumbs : ''
-        }],
-        article2 : [{
-          title : 'Article #2',
-          description : 'This is the second article'
-        }],
-        article3 : [{
-          title : 'Article #3',
-          description : 'This is the third article'
-        }],
-        article4 : [{
-          title : 'Article #4',
-          description : 'This is the fourth article'
-        }],
-        article5 : [{
-          title : 'Article #5',
-          description : 'This is the fifth article'
-        }],
-        article6 : [{
-          title : 'Article #6',
-          description : 'This is the sixth article'
-        }]
+        article : {}
+      }
+    },
+    methods : {
+      getArticleData(){
+        axios
+          .get(
+            
+          )
       }
     }
   })
   app.mount('#app');
+
+  console.log(articlejson)
   </script>
   <!-- End of Vue App -->
 

@@ -1,0 +1,16 @@
+[
+    {
+        "ID" : "1",
+        "Title" : "Moon Knight Review",
+        "Author" : "Rotten Tomatoes",
+        "Thumbnail" : "img/article1_thumbnail",
+        "Content" : "Its entertainment value may wax and wane a bit, but Moon Knight ultimately settles into a mostly enjoyable -- and refreshingly weird -- spot in the MCU firmament."
+    },
+    {
+        "ID" : "2",
+        "Title" : "Morbius Review",
+        "Author" : "Rotten Tomatoes",
+        "Thumbnail" : "img/article2_thumbnail",
+        "content" : "Cursed with uninspired effects, rote performances, and a borderline nonsensical story, this dreary mess is a vein attempt to make Morbius happen."
+    }
+]
