@@ -37,6 +37,6 @@
         "Author" : "Naufal Firoos Asy Syarif",
         "Thumbnail" : "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/article5_thumbnail.jpg",
         "Content" : "Hi there! This is the first ever dummy article that I've made using markdown.",
-        "markdown": "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/markdown/DummyArticle.md"
+        "markdown": "DummyArticle.md"
     }
 ]
