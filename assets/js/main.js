@@ -2,45 +2,62 @@ Vue.createApp({
     data() {
       return {       
         markdownArticle : null,
-        jsondata : {}
+        jsondata : {},
+        link : {}
       };
     },
     methods: {
         getJsonData(){
-        axios
-          .get(
+        axios  
+            .get(
             "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/json/article.json"
           )
           .then((res) => {
-            console.log(res.data);
+            // console.log(res.data);
             this.jsondata = res.data;
-
           })
           .catch((error) => {
             console.log(error);
           })
         },
-        toTheMarkdown(){
-                // const queryString = window.location.search;
-                // const urlParams = new URLSearchParams(queryString);
-                // const article = urlParams.get('DummyArticle');      
-                var converter = new showdown.Converter();
-                axios
-                    .get(
-                        "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/markdown/DummyArticle.md"
-                    )
-                    .then((res) => {
-                        var html = converter.makeHtml(res.data);
-                        this.markdownArticle = html;
-                    })
-                    .catch((error) => {
-                        console.log(error);
-                    })
+        getMarkdownLink(){
+          var converter = new showdown.Converter();
+        axios  
+            .get(
+            "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/json/article.json"
+          )
+          .then((res) => {
+              for(var i of Object.keys(res.data)){
+                  this.link = res.data[i].markdown;
+                  console.log(this.link);
+              }
+          })
+          .catch((error) => {
+            console.log(error);
+          })
+        },
+        async toTheMarkdown(){
+            var converter = new showdown.Converter();
+            const config = {
+                method : 'get',
+                url : 'https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/markdown/DummyArticle.md'
             }
-        
+
+            let res = await axios(config);
+            var html = converter.makeHtml(res.data);
+            this.markdownArticle = html;
+
+            if(res.status === 200) {
+              console.log('Data Retrieved')
+            }
+            // console.log(this.markdownArticle);
+            // console.log(res.status);
+
+        }  
     },
     beforeMount() {
       this.toTheMarkdown()
       this.getJsonData()
+      this.getMarkdownLink()
     },
   }).mount("#app");
