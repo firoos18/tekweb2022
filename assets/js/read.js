@@ -9,8 +9,8 @@ let app = Vue.createApp({
             var converter = new showdown.Converter();
             var url = window.location.href
             let fileName = url.slice(45,57)
-            // console.log(fileName)
-
+            console.log(url.length);
+            console.log(fileName);
             axios
                 .get(
                     "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/markdown/" + fileName
