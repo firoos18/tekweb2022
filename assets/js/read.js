@@ -8,7 +8,7 @@ let app = Vue.createApp({
         getMarkdownFile(){
             var converter = new showdown.Converter();
             var url = window.location.href
-            let fileName = url.slice(45,57)
+            let fileName = url.slice(61,73)
             console.log(url.length);
             console.log(fileName);
             axios
