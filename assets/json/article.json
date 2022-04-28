@@ -29,7 +29,7 @@
         "Author" : "Dexerto",
         "Thumbnail" : "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/article4_thumbnail.jpg",
         "Content" : "There are now a total of 20 Legends to play in Apex – 12 more than the game released with. But Respawn isn’t stopping there, and there are plans for many more Legends to come with each new season.",
-        "markdown": "article4.md"
+        "markdown": "article_4.md"
     },
     {
         "ID" : "5",
@@ -37,6 +37,6 @@
         "Author" : "Naufal Firoos Asy Syarif",
         "Thumbnail" : "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/article5_thumbnail.jpg",
         "Content" : "Hi there! This is the first ever dummy article that I've made using markdown.",
-        "markdown": "article5.md"
+        "markdown": "article_5.md"
     }
 ]
