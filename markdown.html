@@ -21,6 +21,8 @@
   <!-- Axios -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   
+  
+
 </head>
 <body class="bg-light">
   <!-- Start of Navbar -->
@@ -56,7 +58,7 @@
   <!-- Start of Main Content -->
   <section>
     <div class="container" id="app">
-        <div v-html="markdownArticle"></div>
+        <div v-html="markdown"></div>
     </div>
   </section>
   <!-- End of Main Content -->
@@ -67,12 +69,12 @@
   </section>
   <!-- End of Footer -->
 
+  <!-- Source -->
+  <script src="./assets/js/read.js"></script>
+
   <!-- Bootstrap Requirements -->
   <script src="assets/js/jquery.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Source -->
-  <script type="module" src="assets/js/main.js"></script>
 
 </body>
 </html>

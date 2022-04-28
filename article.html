@@ -60,14 +60,14 @@
         <p class="lead">This is the article page where I'm putting some articles to read.</p>
         <div class="container-fluid d-grid py-5">
             <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col"  v-for="data in article">
+                <div class="col"  v-for="data in articles">
                   <div class="card">
                     <img :src="data.Thumbnail" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">{{ data.Title }}</h5>
                       <h7 class="card-text">by : {{ data.Author }}</h6>
                       <p class="card-text pt-3">{{ data.Content }}</p>
-                      <a href="/markdown.html?markdownArticle=DummyArticle.md" class="btn btn-primary" @click="toTheMarkdown()">See More...</a>
+                      <a :href="'./markdown.html?markdown='+data.markdown" class="btn btn-primary">See More...</a>
                     </div>
                     </div>
                 </div>
@@ -85,40 +85,8 @@
   </section>
   <!-- End of Footer -->
 
-  <!-- Start of Vue App -->
-  <script type="module">
-    
-
-    let app = Vue.createApp({
-    data : function() {
-      return {
-        article : {}
-      }
-    },
-    methods : {
-      getArticleData(){
-        axios
-          .get(
-            "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/json/article.json"
-          )
-          .then((res) => {
-            // console.log(res.data);
-            this.article = res.data;
-          })
-          .catch((error) => {
-            console.log(error);
-          })
-      }
-    },
-    beforeMount(){
-      this.getArticleData()
-    }
-  })
-  app.mount('#app');
-
-  </script>
-  <!-- End of Vue App -->
-
+  <!-- JS -->
+  <script src="./assets/js/main.js"></script>
 
   <!-- Bootstrap Requirements -->
   <script src="assets/js/jquery.js"></script>
