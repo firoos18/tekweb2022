@@ -5,7 +5,7 @@
         "Author" : "Rotten Tomatoes",
         "Thumbnail" : "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/article1_thumbnail.jpg",
         "Content" : "Its entertainment value may wax and wane a bit, but Moon Knight ultimately settles into a mostly enjoyable -- and refreshingly weird -- spot in the MCU firmament.",
-        "markdown": ""
+        "markdown": "article_1.md"
     },
     {
         "ID" : "2",
@@ -13,7 +13,7 @@
         "Author" : "Rotten Tomatoes",
         "Thumbnail" : "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/article2_thumbnail.jpg",
         "Content" : "Cursed with uninspired effects, rote performances, and a borderline nonsensical story, this dreary mess is a vein attempt to make Morbius happen.",
-        "markdown": ""
+        "markdown": "article_2.md"
     },
     {
         "ID" : "3",
@@ -21,7 +21,7 @@
         "Author" : "IGN",
         "Thumbnail" : "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/article3_thumbnail.jpg",
         "Content" : "GOOD! with 7.5 rating, Jimmy and Kim's relationship takes a new turn. Mike decides it's for the best to sever his affiliation with an unrestrained associate.",
-        "markdown": ""
+        "markdown": "article_3.md"
     },
     {
         "ID" : "4",
