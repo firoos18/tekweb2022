@@ -5,20 +5,18 @@ let app = Vue.createApp({
       }
     },
     methods: {
-        getMarkdownFile(){
-            var converter = new showdown.Converter();
-            var url = window.location.href
-            let fileName = url.slice(61,73)
-            console.log(url.length);
-            console.log(fileName);
-            axios
+      getMarkdownFile(){
+          const queryString = window.location.search;
+          const urlParams = new URLSearchParams(queryString);
+          const fileName = urlParams.get('markdown');
+          var converter = new showdown.Converter();
+          axios
                 .get(
                     "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/markdown/" + fileName
                 )
                 .then((res) => {
                     var html = converter.makeHtml(res.data);           
                     this.markdown = html;
-                    // console.log(html);
                 })
         }
     },
