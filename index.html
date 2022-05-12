@@ -53,18 +53,18 @@
       <div class="row">
         <div class="col-md-1 d-none d-md-grid d-flex align-items-center">
           <div class="container d-flex flex-column align-items-center">
-            <a href="https://instagram.com/firoos__"><h1><i class='bx bxl-instagram-alt text-secondary'></i></h1></a>
-            <a href="https://github.com/firoos18"><h1><i class='bx bxl-github text-secondary'></i></h1></a>
-            <a href="mailto: itsfiroos@gmail.com"><h1><i class='bx bxs-envelope text-secondary'></i></h1></a>
+            <a :href="IG"><h1><i class='bx bxl-instagram-alt text-secondary'></i></h1></a>
+            <a :href="github"><h1><i class='bx bxl-github text-secondary'></i></h1></a>
+            <a :href="email"><h1><i class='bx bxs-envelope text-secondary'></i></h1></a>
           </div>
         </div>
         <div class="col-6 col-md-7">
           <h3 class="pt-5">&#8212 Hello</h3>
           <h1 class="py-2">I'm Naufal<span class="text-secondary">{{ name }}</span>Asy Syarif</h1>
-          <p class="lead">An Information System students at Ahmad Dahlan University Yogyakarta. A passionate student who thirst in knowledge.</p>
+          <p class="lead">{{ motto }}</p>
         </div>
         <div class="col-6 col-md-4">
-          <img src="assets/img/Foto.png" alt="" class="w-100">
+          <img :src="img" alt="" class="w-100">
         </div>
       </div>
     </div>
@@ -82,7 +82,12 @@
     let app = Vue.createApp({
       data(){
         return{
-          name : ' Firoos '
+          name : ' Firoos ',
+          motto : 'An Information System students at Ahmad Dahlan University Yogyakarta. A passionate student who thirst in knowledge.',
+          img : 'assets/img/Foto.png',
+          IG : 'https://instagram.com/firoos__',
+          github : 'https://github.com/firoos18',
+          email : 'mailto: itsfiroos@gmail.com'
         }
       }
     })
