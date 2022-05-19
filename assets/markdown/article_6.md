@@ -2,7 +2,7 @@
 
  - Utama  : Penjualan disektor F&B (food and beverages)
  - Pendukung  : Management, SDM, Sarana dan Prasarana, Keuangan
-![Alur Proses Bisnis](https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/article6_thumbnail.png)
+![Alur Proses Bisnis](https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/article6_thumbnail.png =500x500)
 
 ## 3) Permasalahan pada Proses Bisnis :
 | NO | Aktivitas | Aktor | Permasalahan | Akibat |
