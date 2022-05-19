@@ -38,5 +38,13 @@
         "Thumbnail" : "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/article5_thumbnail.jpg",
         "Content" : "Hi there! This is the first ever dummy article that I've made using markdown.",
         "markdown": "article_5.md"
+    },
+    {
+        "ID" : "6",
+        "Title" : "UTS Analisis Proses Bisnis",
+        "Author" : "Naufal Firoos Asy Syarif - 2000016069",
+        "Thumbnail" : "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/article6_thumbnail.png",
+        "Content" : "Ini adalah pengerjaan UTS Mata Kuliah Analisis Proses Bisnis Semester IV",
+        "markdown": "article_6.md"
     }
 ]
