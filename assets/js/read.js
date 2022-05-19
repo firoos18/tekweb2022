@@ -10,6 +10,7 @@ let app = Vue.createApp({
           const urlParams = new URLSearchParams(queryString);
           const fileName = urlParams.get('markdown');
           var converter = new showdown.Converter();
+          converter.setFlavor('github');
           axios
                 .get(
                     "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/markdown/" + fileName
