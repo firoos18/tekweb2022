@@ -1,8 +1,9 @@
 ﻿## 2) Proses Bisnis  :
-
- - Utama  : Penjualan disektor F&B (food and beverages)
- - Pendukung  : Management, SDM, Sarana dan Prasarana, Keuangan <br>
+Saya melakukan sebuah analisa proses bisnis pada sebuah cafe bernama Swal.co, cafe tersebut terletak di Jl. Cupuwatu II No.01/01, Cupuwatu II, Purwomartani, Kec. Kalasan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55571. Pemilik dari cafe tersebut ialah Alvian Romi Kurniawan. Proses bisnis utama dari cafe ini adalah pada penjualan disektor F&B (food and beverages) dan dengan proses bisnis pendukung berupa Management, SDM, Sarana dan Prasarana, dan Keuangan baik pengeluaran maupun pemasukkan. Berikut adalah alur proses bisnis tersebut.
+<br>
 ![Alur Proses Bisnis](https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/article6_thumbnail.png =500x500)
+<br>
+Proses bisnis utama terjadi pada saat customer melakukan order. Kemudian saat order dari customer sedang disiapkan, barulah proses bisnis pendukung berlangsung yaitu dengan bergeraknya SDM berupa seluruh pegawai dari cafe melakukan pekerjaan sesuai dengan jobdesknya.
 
 ## 3) Permasalahan pada Proses Bisnis :
 | NO | Aktivitas | Aktor | Permasalahan | Akibat |
