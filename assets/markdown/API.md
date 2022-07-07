@@ -9,6 +9,7 @@
 GET: /biodata
 
 response:
+[
 {
   "id"              : "",
   "nama_lengkap"    : "",
@@ -20,6 +21,7 @@ response:
 {
   ...
 }
+]
 ```
 ### Menampilkan biodata user berdasarkan ```id```
 ```
@@ -83,6 +85,7 @@ false   //if false
 GET: /article
 
 response:
+[
 {
   "id"        : "",
   "title"     : "",
@@ -94,6 +97,7 @@ response:
 {
   ...
 }
+]
 ```
 ### Menampilkan article berdasarkan ```id```
 ```
@@ -158,6 +162,7 @@ false   //if false
 GET: /portfolio
 
 response:
+[
 {
   "id"          : "",
   "title"       : "",
@@ -168,6 +173,7 @@ response:
 {
   ...
 }
+]
 ```
 ### Menampilkan data portfolio berdasarkan ```id```
 ```
@@ -229,6 +235,7 @@ false   //if false
 GET: /social
 
 response:
+[
 {
   "id"          : "",
   "instagram"   : "",
@@ -238,6 +245,7 @@ response:
 {
   ...
 }
+]
 ```
 ### Menampilkan data social media berdasarkan ```id```
 ```
