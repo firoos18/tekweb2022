@@ -298,3 +298,5 @@ response:
 true    //if true
 false   //if false
 ```
+
+# DATABASE DESIGN
