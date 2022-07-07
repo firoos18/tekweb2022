@@ -10,17 +10,17 @@ GET: /biodata
 
 response:
 [
-{
-  "id"              : "",
-  "nama_lengkap"    : "",
-  "nama_panggilan"  : "",
-  "tgl_lahir"       : "",
-  "deskripsi"       : "",
-  "avatar"          : ""
-},
-{
-  ...
-}
+  {
+    "id"              : "",
+    "nama_lengkap"    : "",
+    "nama_panggilan"  : "",
+    "tgl_lahir"       : "",
+    "deskripsi"       : "",
+    "avatar"          : ""
+  },
+  {
+    ...
+  }
 ]
 ```
 ### Menampilkan biodata user berdasarkan ```id```
@@ -86,17 +86,17 @@ GET: /article
 
 response:
 [
-{
-  "id"        : "",
-  "title"     : "",
-  "author"    : "",
-  "markdown"  : "",
-  "thumbnail" : "",
-  "content"   : ""
-},
-{
-  ...
-}
+  {
+    "id"        : "",
+    "title"     : "",
+    "author"    : "",
+    "markdown"  : "",
+    "thumbnail" : "",
+    "content"   : ""
+  },
+  {
+    ...
+  }
 ]
 ```
 ### Menampilkan article berdasarkan ```id```
@@ -163,16 +163,16 @@ GET: /portfolio
 
 response:
 [
-{
-  "id"          : "",
-  "title"       : "",
-  "deskripsi"   : "",
-  "url"         : "",
-  "thumbnail"   : ""
-},
-{
-  ...
-}
+  {
+    "id"          : "",
+    "title"       : "",
+    "deskripsi"   : "",
+    "url"         : "",
+    "thumbnail"   : ""
+  },
+  {
+    ...
+  }
 ]
 ```
 ### Menampilkan data portfolio berdasarkan ```id```
@@ -236,15 +236,15 @@ GET: /social
 
 response:
 [
-{
-  "id"          : "",
-  "instagram"   : "",
-  "github"      : "",
-  "email"       : ""
-},
-{
-  ...
-}
+  {
+    "id"          : "",
+    "instagram"   : "",
+    "github"      : "",
+    "email"       : ""
+  },
+  {
+    ...
+  }
 ]
 ```
 ### Menampilkan data social media berdasarkan ```id```
