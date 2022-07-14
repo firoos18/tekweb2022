@@ -8,6 +8,9 @@
 
   <!-- VueJS -->
   <script src="https://unpkg.com/vue@3"></script>
+
+  <!-- Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
  
   <!-- Custom Bootstrap -->
   <link rel="stylesheet" href="assets/css/main.css">
@@ -53,18 +56,18 @@
       <div class="row">
         <div class="col-md-1 d-none d-md-grid d-flex align-items-center">
           <div class="container d-flex flex-column align-items-center">
-            <a :href="IG"><h1><i class='bx bxl-instagram-alt text-secondary'></i></h1></a>
-            <a :href="github"><h1><i class='bx bxl-github text-secondary'></i></h1></a>
-            <a :href="email"><h1><i class='bx bxs-envelope text-secondary'></i></h1></a>
+            <a :href="social.instagram"><h1><i class='bx bxl-instagram-alt text-secondary'></i></h1></a>
+            <a :href="social.github"><h1><i class='bx bxl-github text-secondary'></i></h1></a>
+            <a :href="social.email"><h1><i class='bx bxs-envelope text-secondary'></i></h1></a>
           </div>
         </div>
         <div class="col-6 col-md-7">
           <h3 class="pt-5">&#8212 Hello</h3>
-          <h1 class="py-2">I'm Naufal<span class="text-secondary">{{ name }}</span>Asy Syarif</h1>
-          <p class="lead">{{ motto }}</p>
+          <h1 class="py-2">I'm Naufal <span class="text-secondary">{{ biodata.nama_panggilan }}</span> Asy Syarif</h1>
+          <p class="lead">{{ biodata.deskripsi }}</p>
         </div>
         <div class="col-6 col-md-4">
-          <img :src="img" alt="" class="w-100">
+          <img :src="biodata.avatar" alt="" class="w-100">
         </div>
       </div>
     </div>
@@ -77,24 +80,8 @@
   </section>
   <!-- End of Footer -->
 
-  <!-- Start of VueJS Script -->
-  <script>
-    let app = Vue.createApp({
-      data(){
-        return{
-          name : ' Firoos ',
-          motto : 'An Information System students at Ahmad Dahlan University Yogyakarta. A passionate student who thirst in knowledge.',
-          img : 'assets/img/Foto.png',
-          IG : 'https://instagram.com/firoos__',
-          github : 'https://github.com/firoos18',
-          email : 'mailto: itsfiroos@gmail.com'
-        }
-      }
-    })
-    app.mount('#app')
-  </script>
-  <!-- End of VueJS Script -->
-
+  <!-- JS -->
+  <script src="./assets/js/main.js"></script>
 
   <!-- Bootstrap Requirements -->
   <script src="assets/js/jquery.js"></script>
